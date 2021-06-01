@@ -306,7 +306,7 @@ header{
     width: 19rem;
     height: 30rem;
     position: relative;
-    /* margin-top: 5rem; */
+    margin-bottom: 5rem;
 }
 .card:hover .card-info{
     bottom: 2rem;
@@ -368,4 +368,97 @@ header{
     border: none;
     border-radius: .5rem;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+/* ------------------------------------------- */
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contato-wrapper{
+    width: 60%;
+    height: 32rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+}
+.contato-left{
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, .6), rgba(22, 22, 22, .9)), 
+    url(img/contato.jpg);
+    background-size: cover; /* Ajusta a img pra ficar inteira com seus ajustes */
+
+}
+.contato-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 1rem;
+}
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-group{
+    position: relative;
+}
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none; /* Remove a marca q fica ao redor do input ao clicar */
+    margin: 2rem 0;
+}
+.input-group textarea{
+    padding-top: 0;
+    max-width: 25rem;
+    max-height: 2;
+}
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 3s;
+}
+.field:focus ~ label{ /* Faz o texto subir quando a area é clicada */
+    top: 0;
+    font-size: .9rem;
+}
+.field:focus{ 
+    border-bottom: 1px solid;
+}
+.btn-submit{
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    background: #FF0099; 
+    background: -webkit-linear-gradient(to right, #493240, #FF0099); 
+    background: linear-gradient(to right, #493240, #FF0099);
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: #eee;
+    border: none;
+    border-radius: .2rem;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+    
 }
