@@ -322,6 +322,7 @@ header{
     visibility: visible;
 }   
 .card-img-wrapper{
+    margin-top: 2rem;
     width: 100%;
     height: 100%;
     background-color: #262626;
